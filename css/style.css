@@ -81,6 +81,8 @@ nav .thirdpart ul{
     list-style-type: none;
     display: flex;
     align-self: center;
+    position: absolute;
+    right: 20%;
 }
 
 nav .thirdpart ul li a{
@@ -97,7 +99,7 @@ nav .thirdpart ul li a:hover{
 main{
     display: grid;
     padding: 20px;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
     grid-column-gap: 20px;
     grid-row-gap: 20px;
     color: black;
@@ -133,4 +135,118 @@ footer{
 
 .footer{
     color: #fff;
+}
+
+.burger{
+    display: none;
+    position: absolute;
+    cursor: pointer;
+    right: 5%;
+    top: 88px;
+}
+
+.line{
+    width: 20px;
+    background-color: #fff;
+    height: 4px;
+    margin: 5px 3px;
+}
+
+@media screen and (max-width: 600px){
+
+    nav .firstpart{
+        display: flex;
+        width: 33%;
+    }
+
+    nav .firstpart img{
+        width: 100%;
+        height: 80%;
+        margin-left: 0.5px;
+    }
+
+    .secondpart{
+        position: absolute;
+        top: 60px;
+        left: 20%;
+        height: 447px;
+        flex-direction: column;
+        transition: all 5.7s ease-out;
+    }
+
+    .secondpart ul li{
+        display: flex;
+        width: 100%;
+        height: 8vh;
+        background: black;
+        padding: 2px;
+        border: 2px solid rgba(255, 255, 255, .2);
+        border-radius: 11px;
+    }
+    
+    nav .thirdpart ul{
+        right: 11%;
+    }
+
+    main{
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .nav-list{
+        flex-direction: column;
+    }
+
+    .burger{
+        display: block;
+    }
+
+    .h-nav-resp{
+        height: 72px;
+    }
+
+    .v-class-resp{
+        opacity: 0;
+    }
+}
+
+@media screen and (max-width: 900px) and (min-width: 600px){
+           
+    .secondpart{
+        position: absolute;
+        top: 60px;
+        left: 20%;
+        height: 447px;
+        flex-direction: column;
+        transition: all 5.7s ease-out;
+    }
+
+    .secondpart ul li{
+        display: flex;
+        width: 100%;
+        height: 8vh;
+        background: black;
+        padding: 2px;
+        border: 2px solid rgba(255, 255, 255, .2);
+        border-radius: 11px;
+    }
+    
+    main{
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+
+    .nav-list{
+        flex-direction: column;
+    }
+
+    .burger{
+        display: block;
+    }
+
+    .h-nav-resp{
+        height: 72px;
+    }
+
+    .v-class-resp{
+        opacity: 0;
+    }
 }

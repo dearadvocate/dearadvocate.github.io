@@ -1,14 +1,15 @@
 main{
+	display: block;
     align-items: center;
     justify-content: center;
-	padding-left: 33%;
+	padding-left: 11%;
+	padding-right: 11%;
 }
 
 main .wrapper {
-	width: 420px;
+	width: 100%;
 	background: transparent;
 	border: 2px solid rgba(255, 255, 255, .2);
-	backdrop-filter: blur(20px);
 	box-shadow: 0 0 10px rgba(0, 0, 0, .2);
 	color: #fff;
 	border-radius: 10px;
